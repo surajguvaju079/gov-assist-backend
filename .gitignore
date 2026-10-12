@@ -1,0 +1,99 @@
+
+# ==========================================
+# Gov Assist Backend - .gitignore
+# NestJS + TypeScript + pnpm + Prisma + Docker
+# ==========================================
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+.tmp/
+temp/
+*.tsbuildinfo
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+coverage/
+.nyc_output/
+test-results/
+junit.xml
+
+# Runtime files
+*.pid
+*.pid.lock
+*.seed
+
+# Local database files and backups
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.backup
+backups/
+
+# Prisma generated client
+src/generated/prisma/
+generated/prisma/
+
+# Docker local overrides
+docker-compose.override.yml
+compose.override.yaml
+
+# IDE and editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+.history/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local tooling
+.cache/
+.turbo/
+.eslintcache
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# Local AI model artifacts (if any)
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.joblib
+models/checkpoints/
+
