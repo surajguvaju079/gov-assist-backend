@@ -13,6 +13,8 @@ export const envSchema = z.object({
   FRONTEND_URL: z.url(),
   AI_SERVICE_URL: z.url(),
   AI_REQUEST_TIMEOUT: z.coerce.number().int().min(1).max(60000).default(5000),
+  JWT_ACCESS_SECRET: z.string().min(32, 'JWT_ACCESS_SECRET must be at least 32 characters long'),
+  JWT_REFRESH_SECRET: z.string().min(32, 'JWT_REFRESH_SECRET must be at least 32 characters long'),
 });
 
 

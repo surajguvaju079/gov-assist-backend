@@ -4,6 +4,9 @@ import { AppService } from './app.service';
 import { DatabaseModule } from './database/database.module';
 import { ConfigModule } from '@nestjs/config';
 import { validateEnv } from './config/env.schema';
+import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
+import { UploadsModule } from './uploads/uploads.module';
 
 @Module({
   imports: [
@@ -13,7 +16,10 @@ import { validateEnv } from './config/env.schema';
       validate: validateEnv,
       cache: true,
     }),
-    DatabaseModule],
+    DatabaseModule,
+    AuthModule,
+    UsersModule,
+    UploadsModule],
   controllers: [AppController],
   providers: [AppService],
 })

@@ -1,6 +1,7 @@
 allowBuilds:
   '@parcel/watcher': true
   '@prisma/engines': set this to true or false
+  argon2: false
   esbuild: true
   prisma: set this to true or false
   unrs-resolver: true
