@@ -26,7 +26,7 @@ export class UploadsController {
         fileType: /^(image\/jpeg|image\/png|application\|pdf)$/,
       })],
   })) file: Express.Multer.File) {
-    return this.uploadsService.uploadDocument(file);
+    //  return this.uploadsService.uploadDocument(file);
 
   }
 
